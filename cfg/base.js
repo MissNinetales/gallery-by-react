@@ -15,9 +15,10 @@ module.exports = {
   debug: true,
   devtool: 'eval',
   output: {
-    path: path.join(__dirname, '../dist/assets'),
+    path: path.join(__dirname, '/../dist/assets'),
     filename: 'app.js',
-    publicPath: defaultSettings.publicPath//部署到服务器上的路径
+    publicPath: 'assets/'//部署到服务器上的路径
+    //publicPath: defaultSettings.publicPath//部署到服务器上的路径
   },
   devServer: {
     contentBase: './src/',
